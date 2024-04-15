@@ -289,7 +289,7 @@ body {
 }
 
 .services h2 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: #000;
   padding: 20px 0;
   font-weight: 800;
@@ -323,10 +323,14 @@ body {
 
 .uxui {
   display: flex;
-  width: 50%;
-  margin: 0 auto;
+  padding: 10px;
+  border-bottom: 2px solid #ffb340;
   justify-content: space-between;
-  color: #fff;
+}
+
+.uxui h3 {
+  color: #ffb340;
+
 }
 
 .container__item {
@@ -342,18 +346,27 @@ body {
 
 .programing__web {
   display: flex;
-  width: 70%;
-  margin: 0 auto;
   justify-content: space-between;
-  color: #fff;
+  padding: 10px;
+  border-bottom: 2px solid #ffb340;
+  justify-content: space-between;
+}
+
+.programing__web h3 {
+  color: var(--color-yellow);
 }
 
 .ceo-sem {
   display: flex;
-  width: 70%;
-  margin: 0 auto;
   justify-content: space-between;
-  color: #fff;
+  padding: 10px;
+  border-bottom: 2px solid #ffb340;
+  justify-content: space-between;
+}
+
+
+.ceo-sem h3 {
+  color: var(--color-yellow);
 }
 
 .code-solid {
@@ -703,9 +716,41 @@ body {
 
 @media screen and (max-width: 768px) {
 
+
+  /*/////////////////////// toggle///////////////////// */
+
   .nav__hero {
     
   }
+
+  .nav__items {
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 100%;
+    background-color: var(--color-black);
+    top: 0;
+    right: -100%;
+    margin: 0;
+    justify-content: space-between;
+    list-style: none;
+    transition: all 500ms;
+}
+
+.nav__item {
+  margin: 50px 0;
+}
+
+.nav__link {
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.visible {
+  right: 0;
+}
+
+ /*/////////////////////// toggle///////////////////// */
 
   .additional__services {
     width: 90%;
@@ -750,10 +795,7 @@ body {
       display: flex;
   }
 
-  .nav__items {
-      display: none;
-    
-  }
+
     
   .container__main {
       display: block;
@@ -820,37 +862,7 @@ body {
 
   }
 
-  .uxui {
-    display: flex;
-    width: 200px;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
-
   
-  .container__programing-web {
-
-  }
-
-  .programing__web {
-    display: flex;
-    width: 260px;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
-
- 
-
-  .container__ceo-sem {
-
-  }
-
-  .ceo-sem {
-    display: flex;
-    width: 160px;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
 
   .slider-container {
     width: 100%;
@@ -957,10 +969,7 @@ body {
       display: flex;
   }
 
-  .nav__items {
-      display: none;
-   
-  }
+
   
   .container__main {
       display: block;

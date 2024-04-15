@@ -1,8 +1,19 @@
 const button = document.querySelector('button');
+let $navItems = document.querySelector('.nav__items')
 
 button.addEventListener('click', () => {
     button.classList.toggle('activo');
+    if ($navItems.classList.contains('visible')) {
+      $navItems.classList.remove('visible');
+    } else {
+      $navItems.classList.add('visible');
+    }
+
 });
+
+
+
+
 
 let intervalId = null; // Variable para almacenar el ID del intervalo
     let isSliderRunning = false; // Variable para controlar si el slider está en funcionamiento
