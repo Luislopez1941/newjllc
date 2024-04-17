@@ -282,6 +282,24 @@ body {
     font-weight: 200;
 }
 
+.technologies {
+  background-color: var(--color-black);
+  height: 400px;
+}
+
+.technologies__container {
+
+}
+
+.technologies__container img {
+  
+}
+
+.content__images {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
 
 .services {
     width: 90%;
@@ -715,6 +733,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
 
 
   /*/////////////////////// toggle///////////////////// */

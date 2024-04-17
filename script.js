@@ -1,5 +1,6 @@
 const button = document.querySelector('button');
 let $navItems = document.querySelector('.nav__items')
+let $body = document.getElementById('body')
 
 button.addEventListener('click', () => {
     button.classList.toggle('activo');
